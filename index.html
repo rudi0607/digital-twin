@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digital Twin 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Digital Twin</h1>
+      <nav aria-label="Portfolio projects">
+        <button id="btnHome" type="button">Home</button>
+        <button id="btnProject1" type="button">Project 1</button>
+        <button id="btnProject2" type="button">Project 2</button>
+        <button id="btnProject3" type="button">Project 3</button>
+      </nav>
+    </header>
+
+    <!-- Three.js canvas -->
+    <div id="three-container" aria-label="Interactive 3D portfolio canvas"></div>
+
+    <!-- Optional info overlay (appears when a project button is clicked) -->
+    <aside id="infoPanel" class="hidden" aria-live="polite">
+      <h2 id="infoTitle"></h2>
+      <p id="infoDesc"></p>
+      <button id="btnCloseInfo" type="button">✕ Close</button>
+    </aside>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
